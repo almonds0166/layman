@@ -50,4 +50,4 @@ If you're interested in using this yourself, keep in mind, I'm right-hand domina
 
 #### \*nix
 
-Eventually I'll find my old xmodmap/xorg files. o_o
+Eventually I'll find my old `loadkeys` file uwu
