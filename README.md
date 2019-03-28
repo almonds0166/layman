@@ -48,6 +48,13 @@ If you're interested in using this yourself, keep in mind, I'm right-hand domina
 
 * Open `layman.klc` with [Microsoft's Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339) if you want to modify.
 
-#### \*nix
+#### Linux
 
-Eventually I'll find my old `loadkeys` file uwu
+[xmodmap](https://wiki.archlinux.org/index.php/xmodmap): `xmodmap layman.xmodmap`
+
+To make it automatic, for `startx`, you'd place the following in your `xinitrc`:
+```
+[[ -f /path/to/layman.xmodmap ]] && xmodmap /path/to/layman.xmodmap
+```
+
+For TTY, I don't know where my `loadkeys` file went \\:
