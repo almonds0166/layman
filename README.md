@@ -8,35 +8,26 @@
 
 The [Dvorak, Colemak, Workman](https://en.wikipedia.org/wiki/Keyboard_layout#Non-QWERTY-based_Latin-script_keyboard_layouts), and other keyboard layouts inspired me to make this yet-another alternative keyboard layout. There are many like it, but this one is mine.
 
-A few notes or principles, which perhaps sound pointless to focus on, but IMO make a pretty darn nice keyboard:
+A few notes or principles, which perhaps sound nebulous or pointless to focus on, but IMO make a pretty darn nice keyboard:
 
-* The shape of the hand resting on the keyboard does not align itself to any home row, rather, the shape is more of a curve.
-
-* What feels for me to be the most effortless way to type two letters in succession is by using the index and middle fingers for the respective first and second letters, and, by having the first and second letters at an angle that goes naturally with how the hand rests on the keyboard. The keys `h` and `e` are a prime example of this.
-
+* The shape of the hand resting on the keyboard does not align itself to any home row, rather, the shape is more of a "home curve".
 * The [most frequent letters](https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_the_English_language) should be in places where the hand is ready to type.
-
+* What feels for me to be the most effortless way to type two letters in succession is by using the index and middle fingers for the respective first and second letters, and, by having the first and second letters at an angle that goes naturally with how the hand rests on the keyboard. The keys `h` and `e` are a prime example of this.
 * Letters commonly used together are most desirably in this arrangement.
+* In addition to considering [bigrams](https://en.wikipedia.org/wiki/Bigrams#Bigram_frequency_in_the_English_language): [trigrams](https://en.wikipedia.org/wiki/Trigram#Frequency) as well as the higher-order *n*-grams hint at where the lower-order *n*-grams should be placed.
+* When running out of candidate adjacent pairs to place the bigrams, the second letter can actually be placed on the *opposite* side of the keyboard instead. The intuition is, both hands can type the letters concurrently.
 
-* In addition to considering [bigrams](https://en.wikipedia.org/wiki/Bigrams#Bigram_frequency_in_the_English_language), [trigrams](https://en.wikipedia.org/wiki/Trigram#Frequency) as well as the higher-order *n*-grams hint at where the lower-order *n*-grams themselves should be placed.
+Even less important yet neat details:
 
-* Let's say we're running out of adjacent pairs to place the bigrams. In that case, the second letter can actually be placed on the *opposite* side of the keyboard. The intuition is, my other hand can deal with it concurrently.
-
-Even less important but neat details:
-
-* The `'` and `;` keys are in the bottom-left, next to `Shift`, so I may easily type `"` and `:`.
-
+* The `'` and `;` keys are in the bottom-left, next to `Shift`. I find typing `"` and `:` quite easy.
 * Similarly, `Ctrl-C` and `Ctrl-V` are neighboring and may be done with just the left hand.
-
-* All brackets -- `()<>[]{}` -- are in the same golden arrangement I mentioned earlier, ready for the right hand to go. (On some physical keyboards, however, the `Esc` key may push the `]`/`}` key over one as in the image above.)
+* All brackets -- `()<>[]{}` -- are in the desirable arrangement mentioned above, ready for the right hand to go. (On some physical keyboards, however, the `Esc` key may push the `]`/`}` key over one square as in the image above.)
 
 Some notes I've gathered from working with this keyboard for years now:
 
-* I'm just as fine with QWERTY as I am with Layman.
-
-* When I'm on QWERTY and want to start a quotation (or String) with `"`, I often accidentally type `Z` instead, since it's in the same position as where I'd expect the `'` key to be.
-
-* When I'm on QWERTY and want to type `:`, I often accidentally type `A` instead, for the same reason.
+* I haven't "forgotten" how to type with QWERTY. In fact, I use QWERTY every day on my phone. That said, I type remarkably more accurately and marginally faster on Layman than on QWERTY.
+* When I'm using someone else's QWERTY keyboard and want to start a quotation (or String) with `"`, I often accidentally type `Z` instead, since it's in the same position as where I'd expect the `'` key to be.
+* Similarly, when I want to type `:` on QWERTY, I often accidentally type `A` instead, for the same reason.
 
 ### Installation
 
@@ -44,7 +35,7 @@ If you're interested in using this yourself, keep in mind, I'm right-hand domina
 
 #### Windows
 
-* `bin/layman/setup.exe` if you want to install.
+* Run `setup.exe` in [the latest `layman.zip`](https://github.com/almonds0166/layman/releases) if you want to install.
 
 * Open `layman.klc` with [Microsoft's Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339) if you want to modify.
 
