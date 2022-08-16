@@ -1,0 +1,83 @@
+
+// Layman keyboard layout
+// (c) 2022 Madison Landry
+// mlandry@mit.edu
+
+// Run:
+//    xkbcomp layman.xkb $DISPLAY
+
+// Peek under /usr/share/X11/xkb/ to better understand
+// what these lines are actually doing, more or less
+
+xkb_keymap {
+   xkb_keycodes  { include "evdev+aliases(qwerty)" };
+   xkb_types     { include "complete"  };
+   xkb_compat    { include "complete"  };
+
+   xkb_symbols "layman" {
+      include "pc+us+inet(evdev)+group(win_space_toggle)+terminate(ctrl_alt_bksp)"
+      name[group1]="English (Layman)";
+
+      // START of the important bits
+
+      // Top row
+      key <AE01> {         [           slash,        question ] };
+      key <AE02> {         [    bracketright,      braceright ] };
+      key <AE03> {         [           equal,            plus ] };
+      key <AE04> {         [               x,               X ] };
+      key <AE05> {         [               z,               Z ] };
+      key <AE06> {         [               q,               Q ] };
+      key <AE07> {         [               u,               U ] };
+      key <AE08> {         [               o,               O ] };
+      key <AE09> {         [               4,          dollar ] };
+      key <AE10> {         [               3,      numbersign ] };
+      key <AE11> {         [               2,              at ] };
+      key <AE12> {         [               1,          exclam ] };
+
+      // Next row
+      key <AD01> {         [     bracketleft,       braceleft ] };
+      key <AD02> {         [               w,               W ] };
+      key <AD03> {         [               d,               D ] };
+      key <AD04> {         [               p,               P ] };
+      key <AD05> {         [               j,               J ] };
+      key <AD06> {         [               r,               R ] };
+      key <AD07> {         [               e,               E ] };
+      key <AD08> {         [               m,               M ] };
+      key <AD09> {         [               8,        asterisk ] };
+      key <AD10> {         [               7,       ampersand ] };
+      key <AD11> {         [               6,     asciicircum ] };
+      key <AD12> {         [               5,         percent ] };
+
+      // Next row
+      key <AC01> {         [       semicolon,           colon ] };
+      key <AC02> {         [               k,               K ] };
+      key <AC03> {         [               c,               C ] };
+      key <AC04> {         [               t,               T ] };
+      key <AC05> {         [               b,               B ] };
+      key <AC06> {         [               h,               H ] };
+      key <AC07> {         [               a,               A ] };
+      key <AC08> {         [               n,               N ] };
+      key <AC09> {         [               y,               Y ] };
+      key <AC10> {         [          period,         greater ] };
+      key <AC11> {         [               0,      parenright ] };
+
+      // Bottom row
+      key <AB01> {         [      apostrophe,        quotedbl ] };
+      key <AB02> {         [           minus,      underscore ] };
+      key <AB03> {         [               v,               V ] };
+      key <AB04> {         [               f,               F ] };
+      key <AB05> {         [               g,               G ] };
+      key <AB06> {         [               s,               S ] };
+      key <AB07> {         [               i,               I ] };
+      key <AB08> {         [               l,               L ] };
+      key <AB09> {         [           comma,            less ] };
+      key <AB10> {         [               9,       parenleft ] };
+
+      // END of the important bits
+
+   };
+
+   xkb_geometry  { include "pc(pc105)" };
+};
+
+
