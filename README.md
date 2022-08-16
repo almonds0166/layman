@@ -55,7 +55,7 @@ test -f /path/to/layman.xkb && xkbcomp /path/to/layman.xkb $DISPLAY
 
 ### macOS
 
-I'll get to it, soon.
+Place the `layman.bundle` package into `/Library/Keyboard Layouts` to install for all users or `~/Library/Keyboard Layouts` for just yourself. Or use [Ukelele using the install organiser](https://suragch.medium.com/how-to-make-a-custom-keyboard-for-mac-os-c9f607428372#15f9). Navigate to your keyboard "Input Sources" settings, click the `+`, and find Layman categorized under "Others". You may need to restart your computer.
 
 ### Windows
 
@@ -65,6 +65,6 @@ Open `layman.klc` with [Microsoft's Keyboard Layout Creator](https://www.microso
 
 ## To-do
 
-* layout build for macOS (will likely use Ukelele)
+* ~~layout build for macOS (will likely use Ukelele)~~
 * look into better install for more Linux systems
 * deadkeys? (altgr accent capabilities)
